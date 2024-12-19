@@ -1,11 +1,19 @@
 function findBookIndex(books, searchBook) {
   // Start coding here
+  for (let i = 0; i < books.length; i++)
+    if (books[i].title === searchBook) {
+      return i;
+    }
+  return -1;
 }
 
 /*
   1. ควรใช้ Search Algorithm ใดในการแก้โจทย์นี้ 
+  ----- ตอบ Linear
   2. ให้เหตุผลประกอบว่าทำไมถึงเลือกใช้ Search Algorithm นี้
+  ----- ตอบ ข้อมูล title เรียงลำดับตัวอักษร เลยเลือกใช้ LinearSearch 
   3. ให้ระบุว่า Big O Notation ของ Function นี้คือเท่าไร เพราะอะไร
+  ----- ตอบ O(n) วน loop ทุกตัว**** อันนี้เปิดดูครับ ลืมครับผม
 */
 
 const books = [
