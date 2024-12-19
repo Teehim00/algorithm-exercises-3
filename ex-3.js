@@ -3,9 +3,9 @@ function sortByRating(shops) {
   for (let i = 0; i < shops.length - 1; i++) {
     for (let j = 0; j < shops.length - 1; j++) {
       if (shops[j].rating < shops[j + 1].rating) {
-        let titles = shops[j];
+        let result = shops[j];
         shops[j] = shops[j + 1];
-        shops[j + 1] = titles;
+        shops[j + 1] = result;
       }
     }
   }
